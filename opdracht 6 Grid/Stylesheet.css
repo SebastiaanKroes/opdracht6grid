@@ -1,0 +1,122 @@
+
+    
+@media (min-width: 320px) {
+
+    body {
+      background-color:bisque; 
+      font-size: 14px;
+      font-family:Arial, Helvetica, sans-serif;}
+
+      .container {
+display: grid;
+grid-template-columns: 320px;
+grid-template-rows: 50px 440px 80px 40px;
+grid-template-areas: 
+"header"
+"site-main"
+"site-widget"
+"site-footer";
+      }
+
+.site-header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.site-main {
+    grid-area: site-main;
+    background-color: green;
+}
+
+.site-widget{
+    grid-area: site-widget;
+    background-color: purple;
+}
+
+.site-footer{
+    grid-area: site-footer;
+background-color: blue;
+}
+} 
+
+
+@media (min-width: 1024px ) {
+
+    body {background-color:brown;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:darkcyan;
+        line-height: 1.2em;}
+    
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 4fr 1fr;
+            grid-template-rows: 320px 280px 100px 150px;
+            grid-template-areas: 
+            "header site-main"
+            "header site-widget"
+            "header site-footer";
+                  }
+            
+            .site-header {
+                grid-area: header;
+                background-color: lightblue;
+            }
+            
+            .site-main {
+                grid-area: site-main;
+                background-color: green;
+            }
+            
+            .site-widget{
+                grid-area: site-widget;
+                background-color: purple;
+            }
+            
+            .site-footer{
+                grid-area: site-footer;
+            background-color: blue;
+            }
+             
+         
+          @media (min-width: 1424px ) {
+
+        body {
+          background-color:rgb(23, 0, 128);
+          font-size: 22px;
+          font-family: Arial, Helvetica, sans-serif;
+          color:black;
+          line-height: 1.3em;}
+
+          .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 320px 280px 100px 150px;
+            grid-template-areas: 
+            "header site-main site-widget"
+            "header site-main site-widget"
+            "header site-footer site-widget";
+                  }
+            
+            .site-header {
+                grid-area: header;
+                background-color: lightblue;
+            }
+            
+            .site-main {
+                grid-area: site-main;
+                background-color: green;
+            }
+            
+            .site-widget{
+                grid-area: site-widget;
+                background-color: purple;
+            }
+            
+            .site-footer{
+                grid-area: site-footer;
+            background-color: blue;
+            }
+
+               
+     }
